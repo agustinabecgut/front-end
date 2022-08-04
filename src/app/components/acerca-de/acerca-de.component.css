@@ -3,9 +3,8 @@
 }
 
 div{
-    background-color: #045400;
+    background-color: #FCEBA6;
     text-align: center;
-    margin-bottom: 20px;
 }
 
 /*Estilo de foto de perfil*/
@@ -15,7 +14,7 @@ div{
         width: 15%;
         border-radius: 100%;
         border-width: thick;
-        border-color: #045400;
+        border-color: #F7B054;
         border-style: solid;
         left: 3%;
         top: 450px;
@@ -28,7 +27,7 @@ div{
         width: 40%;
         border-radius: 100%;
         border-width: thick;
-        border-color: #045400;
+        border-color: #F7B054;
         border-style: solid;
         left: 30%;
         top: 180px;
@@ -37,11 +36,11 @@ div{
 
 /*etiqueta nombre*/
 #nombre{
-    color: white;
+    color: #43254A;
     font-weight: bold;
     margin-top: 15px;
 }
 
 p, h1{
-    color: white;
+    color: #43254A;
 }
