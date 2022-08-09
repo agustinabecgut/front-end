@@ -8,19 +8,6 @@ div{
 }
 
 /*Estilo de foto de perfil*/
-@media (min-width: 576px){
-    #fotoPerfil{
-        position: absolute;
-        width: 15%;
-        border-radius: 100%;
-        border-width: thick;
-        border-color: #F7B054;
-        border-style: solid;
-        left: 3%;
-        top: 450px;
-    }
-}
-
 @media (max-width: 575px){
     #fotoPerfil{
         position: absolute;
@@ -30,7 +17,46 @@ div{
         border-color: #F7B054;
         border-style: solid;
         left: 30%;
-        top: 180px;
+        top: 160px;
+    }
+}
+
+@media (min-width: 576px){
+    #fotoPerfil{
+        position: absolute;
+        width: 20%;
+        border-radius: 100%;
+        border-width: thick;
+        border-color: #F7B054;
+        border-style: solid;
+        left: 2%;
+        top: 210px;
+    }
+}
+
+@media (min-width: 856px){
+    #fotoPerfil{
+        position: absolute;
+        width: 20%;
+        border-radius: 100%;
+        border-width: thick;
+        border-color: #F7B054;
+        border-style: solid;
+        left: 2%;
+        top: 260px;
+    }
+}
+
+@media (min-width: 1200px){
+    #fotoPerfil{
+        position: absolute;
+        width: 20%;
+        border-radius: 100%;
+        border-width: thick;
+        border-color: #F7B054;
+        border-style: solid;
+        left: 2%;
+        top: 300px;
     }
 }
 

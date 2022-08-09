@@ -1,17 +1,12 @@
 .row{
-    padding: 20px; 
-    padding-top: 5%;   
+    padding: 50px; 
+    padding-top: 5%;    
+    border-style: dashed;
+    border-color: #3f8044;
 }
 
-div{
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    background-color: #7FC984;  
-}
-
-h1{
-    padding-top: 20px;
+div{    
+    background-color: #7FC984;      
 }
 
 h1, h2{
