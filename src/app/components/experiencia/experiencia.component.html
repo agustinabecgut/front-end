@@ -1,22 +1,19 @@
 <div class="row">
     <h1>Experiencia Laboral</h1>
-    <div class="col-lg-11">
-       <ul>
-        <li>
-            <h2>Intérprete L4 - LanguageLine Solutions (remoto) </h2> 
-            <h3>(2022)</h3>
-            <p>Intérprete telefónico de Inglés-Español para situaciones médicas, financieras, de seguros y servicio al cliente entre hispanohablantes y angloparlantes.</p>
-        </li>
-        <li>
-            <h2>Runner de comidas - The Laundry Garden </h2> 
-            <h3>(2021)</h3>
-            <p>Tareas de limpieza, empaquetado, fajinado y moza.</p>
-        </li>
-        <li>
-            <h2>Atención al cliente - Florería Paradiso </h2> 
-            <h3>(2020)</h3>
-            <p>Atención al cliente, limpieza, cajera y florista.</p>
-        </li>
-       </ul>
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-light" routerLink="/nuevaexp" *ngIf="isLogged">Nueva experiencia</button>
     </div>
+    <div class="col lg 1"></div>
+    <div class="col-lg-11">
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Experiencia of expe">
+                    <td><h3>{{Experiencia.nombreE}}</h3></td>
+                    <td>{{Experiencia.descripcionE}}</td>
+                    <td *ngIf="isLogged"><button class="btn btn-ligth" routerLink="/editexp/{{Experiencia.id}}"><i class="bi bi-pen"></i>Editar</button></td>                    
+                    <td *ngIf="isLogged"><button class="btn btn-light" (click)="delete(Experiencia.id)"><i class="bi bi-trash"></i>Borrar</button></td>
+                </tr>
+            </tbody> 
+        </table> 
+    </div>    
 </div>
