@@ -27,5 +27,5 @@ h1, h2{
     border-width: thick;
     border-color: #bc4a48;
     border-style: solid;
-    border-radius: 15%;
+    border-radius: 15px;
 }

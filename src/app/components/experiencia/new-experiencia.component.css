@@ -1,0 +1,47 @@
+form{
+    margin: 8% auto;
+    padding: 2%;
+    color: #43254a;
+    background: #fceba6;
+    border: 3px solid #43254a;
+    border-radius: 20px;
+}
+
+input{
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 2%;
+    padding: 1%;
+    color: #43254a;
+    border: 1px solid #43254a;
+    transition: border 0.5s background;
+    border-radius: 5px;
+}
+
+input:hover{
+    border: 3px solid #43254a;
+}
+
+input:active{
+    border: 3px solid #2e1a33;
+}
+
+button{
+    margin: 0 auto;
+    padding: 1% 2%;
+    color: #fceba6;
+    background: #43254a;
+    border: none;
+    border-radius: 5px;
+    transition: border 0.5s background color;
+}
+
+button:hover{
+    background: #2e1a33;
+    color: #fceba6;
+}
+
+button:active{
+    background: #2e1a33;
+    border: 3px solid #2e1a33;
+}
