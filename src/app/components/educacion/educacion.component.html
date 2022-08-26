@@ -1,22 +1,19 @@
 <div class="row">
     <h1>Educación</h1>
-    <div class="col-lg-11">
-       <ul>
-        <li>
-            <h2>Oracle Next Education </h2> 
-            <h3>(desde julio 2022)</h3>
-            <p>Oracle Next Education (o ONE, como se lo conoce comunmente), es un programa de educación y empleabilidad impulsado por la empresa Oracle, y dictado por el sitio de educación online Alura Latam.</p>
-        </li>
-        <li>
-            <h2>Argentina Programa - Etapa final </h2> 
-            <h3>(desde febrero 2022)</h3>
-            <p>Me anoté al curso para desarrollar un oficio, y me terminé enamorando de la informática. Tan así que dejé la carrera que estaba haciendo para poder hacer una licenciatura en sistemas. Este espacio es de un gran valor para mí.</p>
-        </li>
-        <li>
-            <h2>Bachiller en Ciencias Sociales </h2> 
-            <h3>(2015)</h3>
-            <p>Estudié en la Escuela de Educación Secundaria N°2 "José Hernández", que se encuentra en el centro de mi ciudad, General Rodríguez, en la provincia de Buenos Aires.</p>
-        </li>
-       </ul>
+    <div class="col-lg-2">
+        <button type="button" class="agregar" routerLink="/nuevaedu" *ngIf="isLogged">Agregar educación</button>
     </div>
+    <div class="col lg 1"></div>
+    <div class="col-lg-11">
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Educacion of educacion">
+                    <td><h3>{{Educacion.nombreEd}}</h3></td>
+                    <td>{{Educacion.descripcionEd}}</td>
+                    <td *ngIf="isLogged"><button class="editar" routerLink="/editedu/{{Educacion.id}}"><i class="bi bi-pen"></i>Editar</button></td>                    
+                    <td *ngIf="isLogged"><button class="borrar" (click)="delete(Educacion.id)"><i class="bi bi-trash"></i>Borrar</button></td>
+                </tr>
+            </tbody> 
+        </table> 
+    </div>    
 </div>
